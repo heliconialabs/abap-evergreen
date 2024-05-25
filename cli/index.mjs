@@ -27,9 +27,9 @@ async function run() {
       throw new Error(`Failed to fetch: ${result.statusText}`);
     }
 
-    const output = await result.text();
-    if (output !== input) {
-      fs.writeFileSync(filename, output);
+    const output = await result.arrayBuffer();
+    if (Buffer.from(output).toString() !== input) {
+      fs.writeFileSync(filename, Buffer.from(output));
     }
   }
 }
