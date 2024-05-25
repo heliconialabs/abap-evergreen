@@ -1,9 +1,12 @@
 {
   "name": "@abaplint/abap-evergreen",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "description": "abap-evergreen",
-  "main": "cli/index.mjs",
+  "bin": {
+    "abap-evergreen": "abap-evergreen"
+  },
   "scripts": {
+    "publish:patch": "npm --no-git-tag-version version patch && npm install && npm publish --access public",
     "test": "echo \"Error: no test specified\""
   },
   "author": "Lars Hvam Petersen",
