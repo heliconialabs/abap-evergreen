@@ -1,0 +1,11 @@
+{
+  "name": "@abaplint/abap-evergreen",
+  "version": "1.0.0",
+  "description": "abap-evergreen",
+  "main": "cli/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\""
+  },
+  "author": "Lars Hvam Petersen",
+  "license": "MIT"
+}
