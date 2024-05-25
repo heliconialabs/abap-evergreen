@@ -1,0 +1,17 @@
+{
+  "name": "@abaplint/abap-evergreen",
+  "version": "0.0.2",
+  "description": "abap-evergreen",
+  "bin": {
+    "abap-evergreen": "abap-evergreen"
+  },
+  "scripts": {
+    "publish:patch": "npm --no-git-tag-version version patch && npm install && npm publish --access public",
+    "test": "echo \"Error: no test specified\""
+  },
+  "author": "Lars Hvam Petersen",
+  "license": "MIT",
+  "dependencies": {
+    "glob": "^10.4.1"
+  }
+}
